@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Voto Electrónico - Colegio San Juan Bautista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Colegio San Juan Bautista</h1>
+        <h2>Simulador de Voto Electrónico Estudiantil</h2>
+    </header>
+
+    <main>
+        <!-- 1. Pantalla de Bienvenida e Instrucciones -->
+        <section class="card">
+            <h2>Bienvenido a la Elección Estudiantil</h2>
+            <p>Bienvenido al simulador de voto electrónico. A continuación, ingresa tus datos de prueba, selecciona tu candidato preferido y confirma tu voto para completar la práctica.</p>
+        </section>
+
+        <!-- 2. Identificación Ficticia -->
+        <section class="card">
+            <h2>Identificación del Estudiante</h2>
+            <form>
+                <div class="form-group">
+                    <label for="codigo">Código Estudiantil :</label>
+                    <input type="text" id="codigo" placeholder="Ej. EST-12345" required>
+                </div>
+                <div class="form-group">
+                    <label for="grado">Grado y Sección:</label>
+                    <input type="text" id="grado" placeholder="Ej. 4to A" required>
+                </div>
+            </form>
+        </section>
+
+        <!-- 3 y 4. Candidatos y Selección -->
+        <section class="card">
+            <h2>Candidatos</h2>
+            <div class="candidatos-grid">
+                
+                <!-- Candidato 1 -->
+                <div class="candidato-card">
+                    <img src="marco.png" alt="Candidato 1">
+                    <h3>Lista 1: Innovación Sanjuanista</h3>
+                    <p class="candidato-nombre">Candidato: Marco Huaco</p>
+                    <p><strong>Propuestas:</strong> Mejorar la conexión a internet, implementar torneos deportivos escolares e instalar más tachos de reciclaje.</p>
+                    <label class="radio-label">
+                        <input type="radio" name="candidato" value="Lista 1: Innovación Sanjuanista"> Seleccionar Candidato
+                    </label>
+                </div>
+
+                <!-- Candidato 2 -->
+                <div class="candidato-card">
+                    <img src="flores.jpeg" alt="Candidato 2">
+                    <h3>Lista 2: Union Lasallista</h3>
+                    <p class="candidato-nombre">Candidato: Sebastián Flores</p>
+                    <p><strong>Propuestas:</strong> Talleres de arte y tecnología, implementación de jardines escolares y actividades culturales mensuales.</p>
+                    <label class="radio-label">
+                        <input type="radio" name="candidato" value="Lista 2: Union Lasallista"> Seleccionar Candidato
+                    </label>
+                </div>
+
+                <!-- Candidato 3 -->
+                <div class="candidato-card">
+                    <img src="emilio.png" alt="Candidato 3">
+                    <h3>Lista 3: Todos por La Salle</h3>
+                    <p class="candidato-nombre">Candidato: Emilio Flores</p>
+                    <p><strong>Propuestas:</strong> Renovación de la biblioteca, buzón de sugerencias estudiantiles e intercambio cultural con otras sedes.</p>
+                    <label class="radio-label">
+                        <input type="radio" name="candidato" value="Lista 3: Todo por La Salle"> Seleccionar Candidato
+                    </label>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Confirmación -->
+        <section class="card">
+            <h2>Confirmación de Voto</h2>
+            <p>Por favor, revisa detalladamente tu elección antes de hacer clic en el botón para registrar tu voto.</p>
+            <button type="button" class="btn">Confirmar y Emitir Voto</button>
+        </section>
+
+        <!-- 6. Resultado -->
+        <section class="card resultado">
+            <h2>Resultado</h2>
+            <div class="mensaje-exito">
+                ✔ Voto registrado correctamente
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Colegio San Juan Bautista - Proyecto TIC</p>
+    </footer>
+
+</body>
+</html>
